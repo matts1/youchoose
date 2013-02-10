@@ -12,6 +12,7 @@ server.register('/login', login.login)
 server.register('/logout', logout.logout)
 server.register('/home', home.home)
 server.register('/add', add.add)
+server.register('/vote', vote.vote)
 #server.register(r"/view/(\d+)", )
 
 #this needs to go last, since it's a 404 page
