@@ -1,0 +1,64 @@
+{http://www.w3.org/2005/Atom}entry {'{http://schemas.google.com/g/2005}etag': 'W/"DEYERn47eCp7I2A9WhBTFEg."'}
+{http://www.w3.org/2005/Atom}id {}
+{http://www.w3.org/2005/Atom}published {}
+{http://www.w3.org/2005/Atom}updated {}
+{http://www.w3.org/2005/Atom}category {'term': 'http://gdata.youtube.com/schemas/2007#video', 'scheme': 'http://schemas.google.com/g/2005#kind'}
+{http://www.w3.org/2005/Atom}category {'term': 'Shows', 'scheme': 'http://gdata.youtube.com/schemas/2007/categories.cat', 'label': 'Shows'}
+{http://www.w3.org/2005/Atom}title {}
+{http://www.w3.org/2005/Atom}content {'src': 'https://www.youtube.com/v/k2H-SOqbQoA?version=3&f=videos&app=youtube_gdata', 'type': 'application/x-shockwave-flash'}
+{http://www.w3.org/2005/Atom}link {'href': 'https://gdata.youtube.com/feeds/api/videos/T819usZLQtE?v=2', 'type': 'application/atom+xml', 'rel': 'http://gdata.youtube.com/schemas/2007#video.in-response-to'}
+{http://www.w3.org/2005/Atom}link {'href': 'https://www.youtube.com/watch?v=k2H-SOqbQoA&feature=youtube_gdata', 'type': 'text/html', 'rel': 'alternate'}
+{http://www.w3.org/2005/Atom}link {'href': 'https://gdata.youtube.com/feeds/api/videos/k2H-SOqbQoA/responses?v=2', 'type': 'application/atom+xml', 'rel': 'http://gdata.youtube.com/schemas/2007#video.responses'}
+{http://www.w3.org/2005/Atom}link {'href': 'https://gdata.youtube.com/feeds/api/videos/k2H-SOqbQoA/related?v=2', 'type': 'application/atom+xml', 'rel': 'http://gdata.youtube.com/schemas/2007#video.related'}
+{http://www.w3.org/2005/Atom}link {'href': 'https://m.youtube.com/details?v=k2H-SOqbQoA', 'type': 'text/html', 'rel': 'http://gdata.youtube.com/schemas/2007#mobile'}
+{http://www.w3.org/2005/Atom}link {'href': 'https://gdata.youtube.com/feeds/api/users/DsO-0Yo5zpJk575nKXgMVA?v=2', 'type': 'application/atom+xml', 'rel': 'http://gdata.youtube.com/schemas/2007#uploader'}
+{http://www.w3.org/2005/Atom}link {'href': 'https://gdata.youtube.com/feeds/api/shows/U0nTOa4DFrs?v=2', 'type': 'application/atom+xml', 'rel': 'http://gdata.youtube.com/schemas/2007#video.show'}
+{http://www.w3.org/2005/Atom}link {'href': 'https://gdata.youtube.com/feeds/api/seasons/fqiOWRv6ZSI?v=2', 'type': 'application/atom+xml', 'rel': 'http://gdata.youtube.com/schemas/2007#video.season'}
+{http://www.w3.org/2005/Atom}link {'href': 'https://gdata.youtube.com/feeds/api/videos/k2H-SOqbQoA?v=2', 'type': 'application/atom+xml', 'rel': 'self'}
+{http://www.w3.org/2005/Atom}author {}
+{http://www.w3.org/2005/Atom}name {}
+{http://www.w3.org/2005/Atom}uri {}
+{http://gdata.youtube.com/schemas/2007}userId {}
+{http://gdata.youtube.com/schemas/2007}accessControl {'action': 'comment', 'permission': 'allowed'}
+{http://gdata.youtube.com/schemas/2007}accessControl {'action': 'commentVote', 'permission': 'allowed'}
+{http://gdata.youtube.com/schemas/2007}accessControl {'action': 'videoRespond', 'permission': 'moderated'}
+{http://gdata.youtube.com/schemas/2007}accessControl {'action': 'rate', 'permission': 'allowed'}
+{http://gdata.youtube.com/schemas/2007}accessControl {'action': 'embed', 'permission': 'allowed'}
+{http://gdata.youtube.com/schemas/2007}accessControl {'action': 'list', 'permission': 'allowed'}
+{http://gdata.youtube.com/schemas/2007}accessControl {'action': 'autoPlay', 'permission': 'allowed'}
+{http://gdata.youtube.com/schemas/2007}accessControl {'action': 'syndicate', 'permission': 'allowed'}
+{http://gdata.youtube.com/schemas/2007}availability {'start': '2012-02-03T00:00:00.000Z', 'end': '2037-12-31T12:00:00.000Z'}
+{http://schemas.google.com/g/2005}comments {}
+{http://schemas.google.com/g/2005}feedLink {'href': 'https://gdata.youtube.com/feeds/api/videos/k2H-SOqbQoA/comments?v=2', 'countHint': '9803', 'rel': 'http://gdata.youtube.com/schemas/2007#comments'}
+{http://gdata.youtube.com/schemas/2007}episode {'number': '10'}
+{http://schemas.google.com/g/2005}feedLink {'href': 'https://gdata.youtube.com/feeds/api/seasons/fqiOWRv6ZSI/clips?v=2', 'rel': 'http://gdata.youtube.com/schemas/2007#season.clips'}
+{http://schemas.google.com/g/2005}feedLink {'href': 'https://gdata.youtube.com/feeds/api/seasons/fqiOWRv6ZSI/episodes?v=2', 'rel': 'http://gdata.youtube.com/schemas/2007#season.episodes'}
+{http://gdata.youtube.com/schemas/2007}firstReleased {}
+{http://gdata.youtube.com/schemas/2007}hd {}
+{http://search.yahoo.com/mrss/}group {}
+{http://search.yahoo.com/mrss/}category {'scheme': 'http://gdata.youtube.com/schemas/2007/categories.cat', 'label': 'Shows'}
+{http://search.yahoo.com/mrss/}category {'scheme': 'http://gdata.youtube.com/schemas/2007/releasemediums.cat'}
+{http://search.yahoo.com/mrss/}category {'scheme': 'http://gdata.youtube.com/schemas/2007/mediatypes.cat'}
+{http://search.yahoo.com/mrss/}content {'duration': '78', 'medium': 'video', '{http://gdata.youtube.com/schemas/2007}format': '5', 'url': 'https://www.youtube.com/v/k2H-SOqbQoA?version=3&f=videos&app=youtube_gdata', 'expression': 'full', 'type': 'application/x-shockwave-flash', 'isDefault': 'true'}
+{http://search.yahoo.com/mrss/}content {'duration': '78', 'medium': 'video', '{http://gdata.youtube.com/schemas/2007}format': '1', 'url': 'rtsp://r4---sn-a5m7zu7l.c.youtube.com/CiILENy73wIaGQmAQpvqSP5hkxMYDSANFEgGUgZ2aWRlb3MM/0/0/0/video.3gp', 'expression': 'full', 'type': 'video/3gpp'}
+{http://search.yahoo.com/mrss/}content {'duration': '78', 'medium': 'video', '{http://gdata.youtube.com/schemas/2007}format': '6', 'url': 'rtsp://r4---sn-a5m7zu76.c.youtube.com/CiILENy73wIaGQmAQpvqSP5hkxMYESARFEgGUgZ2aWRlb3MM/0/0/0/video.3gp', 'expression': 'full', 'type': 'video/3gpp'}
+{http://search.yahoo.com/mrss/}credit {'scheme': 'urn:youtube', 'role': 'uploader', '{http://gdata.youtube.com/schemas/2007}type': 'partner', '{http://gdata.youtube.com/schemas/2007}display': 'freddiew'}
+{http://search.yahoo.com/mrss/}description {'type': 'plain'}
+{http://search.yahoo.com/mrss/}keywords {}
+{http://search.yahoo.com/mrss/}license {'href': 'http://www.youtube.com/t/terms', 'type': 'text/html'}
+{http://search.yahoo.com/mrss/}player {'url': 'https://www.youtube.com/watch?v=k2H-SOqbQoA&feature=youtube_gdata_player'}
+{http://search.yahoo.com/mrss/}thumbnail {'url': 'http://i.ytimg.com/vi/k2H-SOqbQoA/default.jpg', 'width': '120', 'height': '90', '{http://gdata.youtube.com/schemas/2007}name': 'default', 'time': '00:00:39'}
+{http://search.yahoo.com/mrss/}thumbnail {'url': 'http://i.ytimg.com/vi/k2H-SOqbQoA/mqdefault.jpg', 'width': '320', 'height': '180', '{http://gdata.youtube.com/schemas/2007}name': 'mqdefault'}
+{http://search.yahoo.com/mrss/}thumbnail {'url': 'http://i.ytimg.com/vi/k2H-SOqbQoA/hqdefault.jpg', 'width': '480', 'height': '360', '{http://gdata.youtube.com/schemas/2007}name': 'hqdefault'}
+{http://search.yahoo.com/mrss/}thumbnail {'url': 'http://i.ytimg.com/vi/k2H-SOqbQoA/1.jpg', 'width': '120', 'height': '90', '{http://gdata.youtube.com/schemas/2007}name': 'start', 'time': '00:00:19.500'}
+{http://search.yahoo.com/mrss/}thumbnail {'url': 'http://i.ytimg.com/vi/k2H-SOqbQoA/2.jpg', 'width': '120', 'height': '90', '{http://gdata.youtube.com/schemas/2007}name': 'middle', 'time': '00:00:39'}
+{http://search.yahoo.com/mrss/}thumbnail {'url': 'http://i.ytimg.com/vi/k2H-SOqbQoA/3.jpg', 'width': '120', 'height': '90', '{http://gdata.youtube.com/schemas/2007}name': 'end', 'time': '00:00:58.500'}
+{http://search.yahoo.com/mrss/}title {'type': 'plain'}
+{http://gdata.youtube.com/schemas/2007}aspectRatio {}
+{http://gdata.youtube.com/schemas/2007}duration {'seconds': '78'}
+{http://gdata.youtube.com/schemas/2007}uploaded {}
+{http://gdata.youtube.com/schemas/2007}uploaderId {}
+{http://gdata.youtube.com/schemas/2007}videoid {}
+{http://schemas.google.com/g/2005}rating {'max': '5', 'average': '4.9323997', 'numRaters': '46568', 'rel': 'http://schemas.google.com/g/2005#overall', 'min': '1'}
+{http://gdata.youtube.com/schemas/2007}statistics {'viewCount': '7983122', 'favoriteCount': '0'}
+{http://gdata.youtube.com/schemas/2007}rating {'numLikes': '45781', 'numDislikes': '787'}

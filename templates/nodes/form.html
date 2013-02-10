@@ -1,0 +1,29 @@
+<form enctype="multipart/form-data" method="POST" novalidate>
+    <fieldset>
+        <legend>
+            {{ esc(name) }}
+        </legend>
+        <p class="form_top">{{ top }}</p>
+        <div class="fields">
+            {% for field in fields %}
+            <p class="input">
+                <label>{{ field["placeholder"] }}: </label>
+                <input {% for attr in field %} {{ attr }}="{{ field[attr] }}" {% end for %}>
+            </p>
+            {% end for %}
+        </div>
+        <section class="err">
+            {% if isinstance(err, str) %}
+                <p>{{ esc(err) }}</p>
+            {% else %}
+                {% for item in err %}
+                    <p>{{ esc(item) }}</p>
+                {% end for %}
+            {% end if %}
+        </section>
+        <p>
+            <input type="submit" value="{{ esc(submit) }}">
+        </p>
+        <p class="form_bottom">{{ bottom }}</p>
+    </fieldset>
+</form>

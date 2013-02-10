@@ -1,0 +1,16 @@
+{% run title = "Please Enable Javascript" %}
+{% include /global/header.html %}
+<h1>Javascript is required to use this website</h1>
+<p>
+    Instructions to enable javascript are available <a href="http://enable-javascript.com/">here</a>
+</p>
+<p>
+    When you enable javascript, you will be automatically sent back to the login page.
+</p>
+<meta http-equiv='refresh' content='10; url=/nojs'>
+<p id="load"></p>
+
+{% include /global/footer.html %}
+<script>
+    $('p#load').html("<meta http-equiv='refresh' content='0; url=/login'>");
+</script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="/static/css/normalize.css">
+        <link rel="stylesheet" href="/static/css/layout.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <script type="text/javascript" src="/static/js/jquery-1.8.3.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="/static/images/banner.jpg" alt="banner" id="banner">
+            <nav>
+                {% if user == None %}
+                    {% run navbar = [
+                    ["left", [
+                        ("Reset Password", "/settings")
+                    ]], ["right", [
+                        ("Login", "/login"),
+                        ("Sign Up", "/signup"),
+                    ]]] %}
+                {% elif user.is_student() %} {# student #}
+                    {% run navbar = [
+                    ["left", [
+                        ("Home", "/home")
+                    ]], ["right", [
+                        ("Settings", "/settings"),
+                        ("Classes", "/classes"),
+                        ("Logout", "/logout"),
+                    ]]] %}
+                {% elif user.is_teacher() %} {# teacher #}
+                    {% run navbar = [
+                    ["left", [
+                        ("Home", "/home")
+                    ]], ["right", [
+                        ("Courses", "/courses"),
+                        ("Classes", "/classes"),
+                        ("Settings", "/settings"),
+                        ("Logout", "/logout"),
+                    ]]] %}
+                {% end if %}
+                {% run navbar[1][1] = navbar[1][1][::-1] %}
+                {% if user != None and user.is_admin() %}
+                    {% run navbar[1][1].insert(1, ("User Management", "/users")) %}
+                {% end if %}
+                {% for side in navbar %}
+                <ul class="first">
+                    {% run floatside, side = side %}
+                    {% for page in side %}
+                    <li class="first" style="float:{{ floatside }}"><a class="first" href="{{ page[1] }}">{{ page[0] }}</a></li>
+                    {% end for %}
+                </ul>
+                {% end for %}
+            </nav>
+        </header>
+        <div id="content">
+            <noscript>
+                {# <meta http-equiv="refresh" content="0; url=/nojs"> #}
+                Javascript makes this site much easier to use. Instructions to enable javascript are available <a href="http://enable-javascript.com/">here</a>
+            </noscript>

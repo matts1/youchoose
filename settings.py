@@ -1,0 +1,2 @@
+DEBUG = True
+DEVELOPER_KEY = "AI39si5pbWC1StZw1ughtM2KuK4XORJVds7wl_QiYZnW-wsiyLr8oeX3Let3oCvQdHBGf8zee_FUudLzeEvorouufUZbuWhWtg"

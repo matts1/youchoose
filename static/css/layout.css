@@ -1,0 +1,115 @@
+/* GENERAL */
+html {
+    position: relative;
+    top: -10px;
+}
+
+body {
+    width:960px;
+    margin: 0 auto;
+}
+
+/* CONTENT */
+div#content {
+    position: relative;
+    top: -20px;
+}
+
+/* HEADER */
+header img#banner {
+    width: 960px;
+    height: 140px;
+}
+
+/* NAV */
+nav {
+    position: relative;
+    top:-26px;
+    height: 20px;
+}
+
+nav ul.first {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+nav li.first a.first {
+    padding: 5px 15px;
+    
+}
+
+/* FOOTER */
+footer div#footerbar {
+    background-color: #061E5C;
+    height:23px;
+}
+
+footer div#footerbar a {
+    padding: 5px 15px;
+    position: relative;
+    top: 2px;
+}
+
+footer div#valid img {
+    margin: 10px 0 0 0;
+    height:100px;
+    width:auto;
+}
+
+/* FORMS */
+
+div.fields label, div.fields input {
+    display: inline-block;
+    line-height: 120%;
+}
+div.fields label {
+    width: 200px;
+    text-align: right;
+    clear: both;
+}
+div.fields input {
+    margin-left: 0.5em;
+    width: 150px;
+    margin-right: 100px;
+    position: relative;
+}
+
+.form_bottom {
+    clear: both;
+    float: none;
+}
+
+fieldset {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+input[type="checkbox"] {
+    left: -69px;
+    top:  2px;
+}
+
+/* TABLES */
+table[class^=table-autosort] td, table[class^=table-autosort] th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table[class^=table-autosort] th[class^=table-sortable] {
+    cursor: pointer;
+    background-image: url("/static/images/sortable.gif");
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    padding-left: 18px;
+}
+
+table[class^=table-autosort] {
+    margin: 0 auto;
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+}

@@ -1,0 +1,50 @@
+/* GENERAL */
+html {
+    background-color: #E0EEEE;
+}
+
+body {
+    text-align:center;
+    font-size:12px;
+    font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-weight:400;
+    line-height:18px;
+}
+
+/* NAVBAR */
+nav li {
+    list-style-type: none;
+}
+
+nav li.first a:hover {
+    background-color: #143885;
+}
+
+nav li.first a, footer div#footerbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* FORMS */
+input.error {
+    border: 2px solid #FF0000;
+}
+
+form section.err p {
+    margin: 2px;
+    line-height: 14px;
+    color: #FF0000;
+}
+
+/* TABLES */
+table[class^=table-autosort] thead tr {
+    background-color: #CCCCFF;
+}
+
+table[class^=table-autosort] tr {
+    background-color: white;
+}
+
+table[class^=table-autosort] tr.alternate {
+    background-color: #FFFFCC;
+}

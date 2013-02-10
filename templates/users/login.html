@@ -1,0 +1,10 @@
+{% run title = "Login" %}
+{% include /global/header.html %}
+{{ form("Login", [
+    (1, "Email", "email", "email", ("value", email if email != None else "")),
+    (1, "Password", "pwd", "password")
+    ],
+    err=err,
+    top="If you do not have an account, you can register <a href='/signup'>here</a>",
+    bottom="<a href='/reset'>Forgotten Your Password?</a>") }}
+{% include /global/footer.html %}

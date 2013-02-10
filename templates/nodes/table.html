@@ -1,0 +1,23 @@
+{% if content != [] %}
+    <h1>{{ title }}</h1>
+    <table class="{% for cls in table_classes %}table-{{ cls }} {% end for %}table-autostripe table-stripeclass:alternate">
+        <thead>
+            <tr>
+                {% for item in thead %}
+                    <th class="{% for cls in item[1] %}table-{{ cls }} {% end for %}">{{ item[0] }}</th>
+                {% end for %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in content %}
+                <tr>
+                    {% for item in row %}
+                        <td>{{ item }}</td>
+                    {% end for %}
+                </tr>
+            {% end for %}
+        </tbody>
+    </table>
+{% else %}
+    {{ nomatch }}
+{% end if %}
