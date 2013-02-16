@@ -1,9 +1,82 @@
+#header {
+position:relative;
+float:left;
+width:100% 
 
-p {
+
+}
+
+.header1 {
+
+background-color:#E6E6E6;
+margin-top:-50px;
+margin-left:-8px;
+}
+
+
+#menu {
+  font-family:Arial;
+	display: inline-block;
+	position:relative;
+	background-color:#FFD700;
+	height:500px;
+	width:200px;
+	float:left;
+	margin-left:-7.5px;
+	
+	
+	
+}
+
+
+
+
+#menu a {
+	border-radius: 5px;
+	border: 2px solid #6495ED;
+	background-color: #BCD2EE;
+	height: 50px;
+	width: 120px;
+	margin: auto;
+	text-align: center;
+	text-decoration:none;
+	color:red;
+	font-family:AppleGothic;
+	
+
+}
+
+
+#intro {
+
+
+} 
+
+#vids {
+
+height:580px;
+width:900px;
+border:1px solid #ccc;
+font:16px/26px Georgia, Garamond, Serif;
+float:right;
+
+}
+
+.content {
+margin:0px 50px 50px 10px;
 
 
 }
 
-div{
+#login{
+float:right;
+border-radius:10px;
+background-color:grey;
+text-decoration:none;
+text-align:center;
+color:black;
 
 }
+
+
+
