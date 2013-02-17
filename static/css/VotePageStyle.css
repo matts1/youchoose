@@ -15,15 +15,16 @@ margin-left:-8px;
 
 
 #menu {
-  font-family:Arial;
+	font-family:Arial;
 	display: inline-block;
 	position:relative;
-	background-color:#FFD700;
-	height:500px;
+	
+	height:580px;
 	width:200px;
 	float:left;
-	margin-left:-7.5px;
-	
+	margin-left:20px;
+	border:4px;
+	border: .1em solid #000000; 
 	
 	
 }
@@ -32,18 +33,24 @@ margin-left:-8px;
 
 
 #menu a {
-	border-radius: 5px;
-	border: 2px solid #6495ED;
-	background-color: #BCD2EE;
-	height: 50px;
-	width: 120px;
+	
+	
+	
 	margin: auto;
 	text-align: center;
 	text-decoration:none;
-	color:red;
-	font-family:AppleGothic;
+	color:black;
+	
 	
 
+}
+#menu tr {
+	height: 40px;
+	width: 10px;
+	background-color: #BCD2EE;
+	text-align:left;
+	font-family:AppleGothic;
+	
 }
 
 
@@ -59,6 +66,7 @@ width:900px;
 border:1px solid #ccc;
 font:16px/26px Georgia, Garamond, Serif;
 float:right;
+position:static;
 
 }
 
@@ -77,6 +85,7 @@ text-align:center;
 color:black;
 
 }
+
 
 
 
