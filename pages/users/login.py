@@ -1,11 +1,12 @@
 from . import render
-#from functions.users import require_no_login
+from functions.users import require_no_login
+from models.tables import sessions
 from settings import DEVELOPER_KEY
 from gdata.youtube.service import *
 from gdata.service import BadAuthentication
 
-#@require_no_login
-def login(response):
+@require_no_login
+def login(response, user):
     email = response.get_field("email")
     password = response.get_field("pwd")
     err = ""
@@ -18,21 +19,11 @@ def login(response):
 
         try:
             service.ProgrammaticLogin()
+            sessionid = sessions.create(email)
+            response.set_secure_cookie("session_id", sessionid)
             response.redirect('/home')
+            return
+
         except BadAuthentication as exception:
             err = str(exception)
-
-#    result = Users().login(email, password)
-#    if result == None:
-#        err = ""
-#    elif result == False:
-#        err = "The username or password was incorrect"
-#    else:
-#        #sessionid = Sessions().register(result.id)
-#        #response.set_secure_cookie('session_id', sessionid)
-#        return response.redirect("/home")
-#    if email == None:
-#        email = ""
-
-#    render("users/login.html", response, {"err": err, "email": email})
     render("users/login.html", response, {"err": err, "email": email})

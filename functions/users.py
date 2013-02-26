@@ -3,43 +3,35 @@ import settings
 import traceback
 import sys
 import cgi as html
+from models.tables.sessions import get
 
 def require_login(fn):
-    return auth_level(fn, [1, 4, 5], "/login")
-
-def require_student(fn):
-    return auth_level(fn, [4, 5], "/home")
-
-def require_teacher(fn):
-    return auth_level(fn, [4, 5], "/home")
-
-def require_admin(fn):
-    return auth_level(fn, [5], "/home")
+    return auth_level(fn, True, "/login")
 
 def require_no_login(fn):
-    return auth_level(fn, [None], "/home")
+    return auth_level(fn, False, "/home")
 
-def get_level(fn):
-    return auth_level(fn, [None, 1, 4, 5], "err")
+def require_none(fn):
+    return auth_level(fn, None, "")
 
 def get_user(response):
-    return None
     session_cookie = response.get_secure_cookie("session_id")
     if session_cookie is not None:
         session_cookie = session_cookie.decode('utf-8')
-        user = session.validate(session_cookie)
+        print "cookie:", session_cookie
+        user = get(session_cookie)
+        print "user:", user
         if user is not None:
-            session.refresh(session_cookie)
-            return User(user)
+            return user
         else:
             return None
     else:
         return None
 
-def auth_level(fn, required_levels, redirect):
+def auth_level(fn, req, redirect):
     def wrapper(response, *args):
         user = get_user(response)
-        if user in required_levels or (user is not None and user.state in required_levels):
+        if req == None or (user == None and req == False) or (user != None and req == True):
             try:
                 return fn(response, *args, user=user)
             except Exception as err:

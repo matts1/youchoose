@@ -2,9 +2,10 @@ import re
 import urllib2
 import xml.etree.ElementTree as ET
 from . import render
+from functions.users import require_login
 
-def add(response):
-    #REQUIRE LOGIN
+@require_login
+def add(response, user):
     url = response.get_field("url")
     if url != None:
         get = re.findall(r".*?youtube\.com[^/]*?/watch\?(?:.+?=.+?&)*v=([^&]+)(?:&.+?=.+?)*", url)[0]

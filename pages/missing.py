@@ -1,6 +1,6 @@
 from . import render
-from functions.users import get_level
+from functions.users import require_none
 
-@get_level
+@require_none
 def missing(response, page, user):
     render('global/error.html', response, {"page": page, "error": 404})

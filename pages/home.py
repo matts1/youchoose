@@ -1,2 +1,2 @@
-def home(response, user):
+def home(response):
     response.redirect('/add')

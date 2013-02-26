@@ -20,30 +20,9 @@
                         ("Login", "/login"),
                         ("Sign Up", "/signup"),
                     ]]] %}
-                {% elif user.is_student() %} {# student #}
-                    {% run navbar = [
-                    ["left", [
-                        ("Home", "/home")
-                    ]], ["right", [
-                        ("Settings", "/settings"),
-                        ("Classes", "/classes"),
-                        ("Logout", "/logout"),
-                    ]]] %}
-                {% elif user.is_teacher() %} {# teacher #}
-                    {% run navbar = [
-                    ["left", [
-                        ("Home", "/home")
-                    ]], ["right", [
-                        ("Courses", "/courses"),
-                        ("Classes", "/classes"),
-                        ("Settings", "/settings"),
-                        ("Logout", "/logout"),
-                    ]]] %}
+                {% else %}
                 {% end if %}
                 {% run navbar[1][1] = navbar[1][1][::-1] %}
-                {% if user != None and user.is_admin() %}
-                    {% run navbar[1][1].insert(1, ("User Management", "/users")) %}
-                {% end if %}
                 {% for side in navbar %}
                 <ul class="first">
                     {% run floatside, side = side %}

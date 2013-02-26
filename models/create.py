@@ -25,5 +25,12 @@ cur.execute("""CREATE TABLE votes (
     FOREIGN KEY (video) REFERENCES videos (id)
 );""")
 
+cur.execute("""CREATE TABLE sessions (
+    id TEXT NOT NULL,
+    email TEXT NOT NULL,
+    expiry INTEGER NOT NULL,
+    PRIMARY KEY(id)
+);""")
+
 db.commit()
 db.close()
