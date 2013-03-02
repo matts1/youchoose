@@ -4,13 +4,14 @@ float:left;
 width:100% 
 
 
+
 }
 
 .header1 {
 
 background-color:#E6E6E6;
-margin-top:-50px;
-margin-left:-8px;
+margin-top:-30px;
+margin-left:0px;
 }
 
 
@@ -25,7 +26,7 @@ margin-left:-8px;
 	margin-left:20px;
 	border:4px;
 	border: .1em solid #000000; 
-	
+	opacity:0.6;
 	
 }
 
@@ -54,14 +55,13 @@ margin-left:-8px;
 }
 
 
-#intro {
-
+#intro p{
 
 } 
 
 #vids {
 
-height:580px;
+height:1000px;
 width:900px;
 border:1px solid #ccc;
 font:16px/26px Georgia, Garamond, Serif;
@@ -75,6 +75,13 @@ margin:0px 50px 50px 10px;
 
 
 }
+.content table td {
+ 
+    overflow: hidden;
+    
+   
+}
+
 
 #login{
 float:right;
@@ -83,6 +90,7 @@ background-color:grey;
 text-decoration:none;
 text-align:center;
 color:black;
+margin-top:10px;
 
 }
 
